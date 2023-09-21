@@ -1,12 +1,36 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * infinite_add - function that adds two numbers
- * @n1: parameter 1
- * @n2: parameter 2
- * @r: buffer that the function will use to store result
+ * rev_string - reverse array
+ * @n: integer parameter
+ */
+void rev_string(char *n)
+{
+	int i = 0;
+	int j = 0;
+	char temp;
+
+	while (*(n + i) != '\0')
+	{
+		i++;
+	}
+	i--;
+
+	for (j = 0 ; j < i ; j++, i--)
+	{
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = temp;
+	}
+}
+
+/**
+ * infinite_add - add two numbers together
+ * @n1: text representation of 1st number to add
+ * @n2: text representation of 2nd number to add
+ * @r: pointer to buffer
  * @size_r: buffer size
- * Return: pointer  to be changed
+ * Return: pointer to calling function
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
