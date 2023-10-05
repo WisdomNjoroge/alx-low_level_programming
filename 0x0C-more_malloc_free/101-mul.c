@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
 int find_len(char *str);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
@@ -46,7 +47,7 @@ char *create_xarray(int size)
 }
 
 /**
- * iterate_zones - iterates through a string of number
+ * iterate_zeroes - iterates through a string of number
  * @str: string of number to iterate through
  *
  * Return: pointer to the next non-zero element
