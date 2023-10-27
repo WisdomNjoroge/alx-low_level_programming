@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _pow - calculates (base ^ power)
@@ -10,7 +9,7 @@
  */
 unsigned long int _pow(unsigned int base, unsigned int power)
 {
-	unsigned int num;
+	unsigned long int num;
 	unsigned int a;
 
 	num = 1;
