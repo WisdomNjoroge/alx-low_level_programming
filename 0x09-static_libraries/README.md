@@ -1,1 +1,3 @@
-liball
+C - Static libraries.
+Create the static library libmy.a containing all the functions
+Create a script called create_static_lib.sh that creates a static library called liball.afrom all the .c files that are in the current directory.
